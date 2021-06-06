@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: root
+    password: xxxxxx
+    url: jdbc:mysql://Master:3306/yuequ?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&SelectMethod=cursor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 443
+  ssl:
+      enabled: true
+      key-store: classpath:pumpkin2.zzxcloud.cn.jks
+      key-store-password: xxxxxx
+      key-store-type: JKS
+
+condition:
+  http2https: true
+http:
+  port: 80
+logging:
+  level:
+      com.cloudtech.dao: debug
